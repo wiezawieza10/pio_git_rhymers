@@ -4,7 +4,7 @@ public class DefaultCountingOutRhymer {
 
 
 	public static final int INITIAL = -1;
-	public static final int CAPACITY = 12;
+	public static final int LENGTH = 12;
 	public static final int RETURN = -1;
 
 
@@ -23,7 +23,7 @@ public class DefaultCountingOutRhymer {
 		}
 		
 			public boolean isFull() {
-				return total == CAPACITY-1;
+				return total == LENGTH-1;
 			}
 		
 				protected int peekaboo() {
