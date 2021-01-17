@@ -8,6 +8,10 @@ int totalRejected = 0;
 		return totalRejected;
 	}
 
+<<<<<<< Updated upstream
+=======
+	@Override
+>>>>>>> Stashed changes
 	public void countIn(int in) {
 	if (!callCheck() && in > peekaboo())
 			totalRejected++;
