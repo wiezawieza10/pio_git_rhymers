@@ -2,12 +2,9 @@ package edu.kis.vh.nursery.list;
 
 public class IntLinkedList {
 
-<<<<<<< Updated upstream
-=======
 
 	public static final int RETURN = -1;
 
->>>>>>> Stashed changes
 	Node last;
 	int i;
 
@@ -31,21 +28,13 @@ public class IntLinkedList {
 
 	public int top() {
 		if (isEmpty())
-<<<<<<< Updated upstream
-			return -1;
-=======
 			return RETURN;
->>>>>>> Stashed changes
 		return last.value;
 	}
 
 	public int pop() {
 		if (isEmpty())
-<<<<<<< Updated upstream
-			return -1;
-=======
 			return RETURN;
->>>>>>> Stashed changes
 		int ret = last.value;
 		last = last.prev;
 		return ret;

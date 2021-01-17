@@ -1,6 +1,6 @@
 package edu.kis.vh.nursery;
 
-public class HanoiRhymer extends defaultCountingOutRhymer {
+public class HanoiRhymer extends DefaultCountingOutRhymer {
 
 int totalRejected = 0;
 
@@ -8,10 +8,7 @@ int totalRejected = 0;
 		return totalRejected;
 	}
 
-<<<<<<< Updated upstream
-=======
 	@Override
->>>>>>> Stashed changes
 	public void countIn(int in) {
 	if (!callCheck() && in > peekaboo())
 			totalRejected++;
@@ -19,3 +16,7 @@ int totalRejected = 0;
 				super.countIn(in);
 	}
 }
+
+//zle sformatowane wiersze: 5, 12, 14, 15
+
+//Klawisze alt + ← oraz alt + → przełączają między otwartymi dokumentami w Intellij
