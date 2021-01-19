@@ -3,10 +3,10 @@ package edu.kis.vh.nursery.list;
 public class IntLinkedList {
 
 
-    public static final int RETURN = -1;
+    public final int RETURN = -1;
 
-    Node last;
-    int i;
+    private Node last;
+    private int i;
 
     public void push(int i) {
         if (last == null)
