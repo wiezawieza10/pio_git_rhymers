@@ -24,7 +24,7 @@ public class IntArrayStack implements StackAndListInterface {
         return total == LENGTH - 1;
     }
 
-    protected int peekaboo() {
+    public int peekaboo() {
         if (isEmpty())
             return RETURN;
         return NUMBERS[total];
