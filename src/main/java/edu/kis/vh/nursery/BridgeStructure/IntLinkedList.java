@@ -1,6 +1,6 @@
-package edu.kis.vh.nursery.list;
+package edu.kis.vh.nursery.BridgeStructure;
 
-public class IntLinkedList {
+public class IntLinkedList implements StackAndListInterface {
 
     /**
      * Return - zwracana wartość w metodzie pop i top gdy metoda isEmpty zwraca 'true' - lista jest pusta

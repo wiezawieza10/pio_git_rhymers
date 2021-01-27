@@ -1,6 +1,7 @@
 package edu.kis.vh.nursery;
 
-import static edu.kis.vh.nursery.IntArrayStack.RETURN;
+
+import edu.kis.vh.nursery.BridgeStructure.IntArrayStack;
 
 public class DefaultCountingOutRhymer {
     private IntArrayStack stack;
@@ -22,11 +23,11 @@ public class DefaultCountingOutRhymer {
     }
 
     public void countIn(int in) {
-        stack.countIn(in);
+        stack.push(in);
     }
 
     public boolean callCheck() {
-        return stack.callCheck();
+        return stack.isEmpty();
     }
 
     public boolean isFull() {

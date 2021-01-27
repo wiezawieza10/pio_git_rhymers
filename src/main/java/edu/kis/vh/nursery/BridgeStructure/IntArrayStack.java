@@ -1,6 +1,6 @@
-package edu.kis.vh.nursery;
+package edu.kis.vh.nursery.BridgeStructure;
 
-public class IntArrayStack {
+public class IntArrayStack implements StackAndListInterface {
     public static final int INITIAL = -1;
     public static final int LENGTH = 12;
     public static final int RETURN = -1;
@@ -11,12 +11,12 @@ public class IntArrayStack {
 
     public int total = INITIAL;
 
-    public void countIn(int in) {
+    public void push(int in) {
         if (!isFull())
             NUMBERS[++total] = in;
     }
 
-    public boolean callCheck() {
+    public boolean isEmpty() {
         return total == INITIAL;
     }
 
@@ -25,13 +25,13 @@ public class IntArrayStack {
     }
 
     protected int peekaboo() {
-        if (callCheck())
+        if (isEmpty())
             return RETURN;
         return NUMBERS[total];
     }
 
     public int countOut() {
-        if (callCheck())
+        if (isEmpty())
             return RETURN;
         return NUMBERS[total--];
     }
